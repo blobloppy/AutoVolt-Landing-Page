@@ -378,12 +378,277 @@ color pallete theme :
 }
 
 .footer {
-    height: 40vh;
+    position: relative;
     width: 100%;
-    background-color: #101010;
+    background: #484848;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.social-icon__item {
+    text-decoration: none;
+}
 
+.social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
 
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
 
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
 
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Add this to your CSS file */
+
+/* For screens with a maximum width of 768px (tablets and smaller) */
+@media only screen and (max-width: 768px) {
+    .header {
+      padding: 10px 5%;
+    }
+  
+    .logo {
+      width: 30%;
+    }
+  
+    .navbar a {
+      font-size: 18px;
+      margin-left: 30px;
+    }
+  
+    .home {
+      height: 100vh;
+      padding-top: 20px;
+    }
+  
+    .home .intro-content {
+      flex: 1;
+      max-width: 100%;
+      padding: 10%;
+    }
+  
+    .home .intro-image {
+      flex: 1;
+      max-width: 100%;
+      padding: 3%;
+    }
+  
+    .home .intro-content h1 {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  
+    .home .intro-content p {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  
+    .about {
+      height: 100vh;
+      padding-top: 20px;
+    }
+  
+    .about .about-content {
+      padding-left: 5%;
+      padding-top: 5%;
+      max-width: 100%;
+    }
+  
+    .about .about-image {
+      max-width: 100%;
+      padding-left: 5%;
+      padding-top: 5%;
+    }
+  
+    .about .about-content h1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    .about .about-content p {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  
+    .services {
+      height: 100vh;
+      padding-top: 20px;
+    }
+  
+    .services .card-container {
+      flex-direction: column;
+    }
+  
+    .services .card {
+      width: 100%;
+      margin: 20px 0;
+    }
+  
+    .services .card-content {
+      padding: 20px;
+    }
+  
+    .services .card h2 {
+      font-size: 18px;
+    }
+  
+    .services .card p {
+      font-size: 14px;
+    }
+  
+    .promo {
+      height: 100vh;
+      padding-top: 20px;
+    }
+  
+    .promo .card-container {
+      padding-block: 10px;
+    }
+  
+    .promo .card-article {
+      width: 100%;
+    }
+  
+    .promo .card-data h3 {
+      font-size: 18px;
+    }
+  
+    .footer {
+      padding: 10px 20px;
+    }
+  }
+  
+  /* For screens with a maximum width of 480px (mobile devices) */
+  @media only screen and (max-width: 480px) {
+    .header {
+      padding: 10px 5%;
+    }
+  
+    .logo {
+      width: 20%;
+    }
+  
+    .navbar a {
+      font-size: 14px;
+      margin-left: 20px;
+    }
+  
+    .home .intro-content h1 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  
+    .home .intro-content p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .about .about-content h1 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  
+    .about .about-content p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .services .services-title h1 {
+      font-size: 24px;
+    }
+  
+    .services .card h2 {
+      font-size: 16px;
+    }
+  
+    .services .card p {
+      font-size: 12px;
+    }
+  
+    .promo .promo-title h1 {
+      font-size: 24px;
+    }
+  
+    .promo .card-data h3 {
+      font-size: 16px;
+    }
+  
+    .footer p {
+      font-size: 10px;
+    }
+  }
+  
+  /* For screens with a maximum width of 320px (small mobile devices) */
+  @media only screen and (max-width: 320px) {
+    .header {
+      padding: 10px 5%;
+    }
+  
+    .logo {
+      width: 15%;
+    }
+  
+    .navbar a {
+      font-size: 12px;
+      margin-left: 15px;
+    }
+  
+    .home .intro-content h1 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  
+    .home .intro-content p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  
+    .about .about-content h1 {
+      font-size: 24px;
+
+    }
+
+  }
