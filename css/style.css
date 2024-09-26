@@ -165,19 +165,18 @@ color pallete theme :
 .services {
     height: 100vh;
     padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     background-color: #B23A39;
 }
 
 .services .services-title {
-    padding-top: 70px;
     height: 100px;
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-bottom: 30px;
     text-shadow: #000;
 }
 
