@@ -177,6 +177,7 @@ color pallete theme :
 }
 
 .services-title h1 {
+    color: azure;
     font-size: 48px;
     font-weight: 700;
 }
@@ -250,38 +251,38 @@ color pallete theme :
 }
 
 .promo {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+    margin-bottom: 90px;
 }
 
-/* .promo .promo-titles {
-    padding-top: 70px;
+.promo .promo-title {
+    margin-top: 50px;
     padding-left: 10%;
     height: 100px;
     width: 100%;
     align-items: center;
     display: flex;
-    margin-bottom: 30px;
     text-shadow: #000;
-} */
+}
 
-/* .promo .promo-titles h1 {
-    font-size: 59px;
+.promo .promo-title h1 {
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 5px;
-} */
+}
 
 .promo .card-container {
-    padding-block: 5rem;
+    padding-block: 15px;
+    height: 700px;
 }   
 
 .promo .card-content {
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
     border-radius: 1.76rem;
     margin-inline: 1.25rem;
     overflow: hidden;
@@ -337,6 +338,49 @@ color pallete theme :
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    content: '';
+}
+
+.swiper-button-prev, .swiper-button-next {
+    width: initial;
+    height: initial;
+    font-size: 1000px;
+    color: #B23A39;
+    display: none;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    transition: opacity 0.3s;
+    background-color: #8b3434;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B23A39;
+}
+
+.footer {
+    height: 40vh;
+    width: 100%;
+    background-color: #101010;
 }
 
 

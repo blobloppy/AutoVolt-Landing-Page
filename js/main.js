@@ -1,5 +1,3 @@
-console.log("Script is Loaded");
-
 let swiper = new Swiper('.card-content', {
     loop: true,
     spaceBetween:32, 
@@ -7,6 +5,8 @@ let swiper = new Swiper('.card-content', {
   
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
     },
 
     navigation: {
