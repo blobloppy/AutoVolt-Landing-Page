@@ -117,7 +117,12 @@ color pallete theme :
 .home .intro-image {
     flex: 1;
     max-width: 100%;
-    padding: 3%;
+    padding-right: 7%;
+}
+
+.home .intro-image img {
+    width: 843px;
+    height: 600px;
 }
 
 .about {
