@@ -80,6 +80,16 @@ color pallete theme :
     position: relative;
 }
 
+.home::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(255,255,255) 3%, rgb(160, 160, 160) 25%);
+}
+
 .home .intro-content {
     flex: 1;
     max-width: 50%;
@@ -374,23 +384,6 @@ color pallete theme :
     display: none;
 }
 
-.swiper-pagination {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    transition: opacity 0.3s;
-    background-color: #8b3434;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #B23A39;
-}
-
 .testimoni {
     height: 70vh;
     width: 100%;
@@ -443,9 +436,9 @@ color pallete theme :
 }
 
 .testimoni .card-content img {
-    padding-block: 30px;
-    width: 125px;
-    height: 125px;
+    padding-block: 5px;
+    width: 150px;
+    height: 150px;
 }
 
 .testimoni .card-content h3 {
@@ -456,6 +449,7 @@ color pallete theme :
 }
 
 .testimoni .card-content p {
+    font-style: italic;
     font-weight: 400;
     font-size: 20px;
     padding-inline: 50px;
