@@ -356,14 +356,6 @@ color pallete theme :
     display: none;
 }
 
-.swiper-button-next {
-    right: 0;
-}
-
-.swiper-button-prev {
-    left: 0;
-}
-
 .swiper-pagination {
     width: 100%;
     margin-bottom: 10px;
@@ -385,6 +377,7 @@ color pallete theme :
     height: 70vh;
     width: 100%;
     display: block;
+    margin-bottom: 40px;
 }
 
 .testimoni .testimoni-title {
@@ -403,9 +396,10 @@ color pallete theme :
 }
 
 .testimoni .card-container {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
 }
 
 .testimoni .card {
@@ -431,7 +425,7 @@ color pallete theme :
 }
 
 .testimoni .card-content img {
-    margin-bottom: 20px;
+    padding-block: 30px;
     width: 125px;
     height: 125px;
 }
