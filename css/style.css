@@ -586,6 +586,10 @@ color pallete theme :
         font-size: 13px;
         
     }
+
+    .home::after {
+        height: 50px;
+    }
 }
 
 /*Tablet*/
