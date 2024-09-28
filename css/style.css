@@ -550,8 +550,7 @@ color pallete theme :
 /*Media Queries*/
 
 /*Laptop*/
-@media only screen and(min-width: 1366px) {
-
+@media only screen and(max-width: 1366px) {
     .header {
         padding: 10px 5%;
     }
@@ -768,8 +767,217 @@ color pallete theme :
 
 /*Tablet*/
 @media (max-width: 768px) {
-    html {
-        font-size: 62.5%;
+    .header {
+        padding: 10px 5%;
+    }
+
+    .navbar a {
+        font-size: 19px;
+    }
+
+    .scrolled {
+        background-color: #fff;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .home {
+        height: 768px;
+    }
+
+    .home .intro-content h1{
+        font-size: 33px;
+        word-spacing: 6px;
+        line-height: 60px;
+    }
+
+    .home .intro-content p{
+        font-size: 16px;
+        word-spacing: 8px;
+        line-height: 25px;
+    }
+
+    .home .intro-content {
+        max-width: 50%;
+    }
+
+    .home .intro-image {
+        max-width: 50%;
+    }
+
+    .home .intro-image img {
+        width: 550px;
+    }
+
+    .home .intro-content .btn-box {
+        margin-top: 10px;
+        width: 245px;
+        height: 40px;
+    }
+
+    .home .btn-box a {
+        font-size: 13px;
+        
+    }
+
+    .home::after {
+        height: 50px;
+    }
+
+    .about {
+        height: 538px;
+        padding-top: 20px;
+    }
+
+    .about .about-content {
+        padding-left: 5%;
+        padding-top: 7%;
+        max-width: 55%;
+    }
+    
+    .about .about-content h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .about .about-content p{
+        padding-top: 30px;
+        font-weight: 300;
+        font-size: 30px;
+    }
+    
+    .about .about-image {
+        max-width: 45%;
+        padding-left: 10px;
+        padding-top: 5%;
+        margin-left: 50px;
+    }
+
+    .about .about-image img {
+        width: 510px;
+    }
+
+    .services {
+        height: 768px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .services .services-title {
+        height: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .services .services-title h1 {
+        font-size: 38px;
+    }
+
+    .services .card-container {
+        height: 100%;
+    }
+    
+    .services .card {
+        width: 350px;
+        height: 300px;
+    }
+    
+    .services .card img {
+        display: block;
+        width: 15%;
+        height: auto;
+    }
+    
+    .services .card h2 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .services .card p {
+        margin-top: 20px;
+        font-size: 15px;
+        padding-inline: 20px;
+    }
+    
+    .services .btn-services {
+        width: 255px;
+        height: 45px;
+    }
+    
+    .services .btn-services a {
+        font-size: 13px;
+    }
+
+    .promo {
+        height: 614px;
+    }
+    
+    .promo .promo-title {
+        margin-top: 40px;
+        height: 60px;
+    }
+    
+    .promo .promo-title h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .promo .card-container {
+        width: 700px;
+        height: 500px;
+    }   
+    
+    .promo .card-content {
+        width: 700px;
+        height: 500px;
+    }
+    
+    .promo .card-image img {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .promo .card-button {
+        margin-top: 20px;
+        height: 50px;
+    }
+    
+    .promo .card-button a {
+        width: 200px;
+        border-radius: 7px;
+        font-size: 12px;
+    }
+
+    .testimoni {
+        height: 538px;
+    }
+    
+    .testimoni .testimoni-title {
+        height: 50px;
+    }
+    
+    .testimoni .testimoni-title h1{
+        font-size: 57px;
+    }
+    
+    .testimoni .card {
+        width: 350px;
+        height: 450px;
+    }
+    
+    .testimoni .card-content img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .testimoni .card-content h3 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    .testimoni .card-content p {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        padding-inline: 50px;
     }
 }
 
