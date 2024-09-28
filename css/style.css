@@ -78,7 +78,19 @@ color pallete theme :
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
+    z-index: 1;
 }
+
+.home::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(226,226,226,1) 35%);
+    bottom: 0;
+    z-index: 2;
+}
+
 
 .home .intro-content {
     flex: 1;
@@ -130,6 +142,12 @@ color pallete theme :
     text-align: center;
     justify-content: center;
     align-items: center;
+    transition: background 0.3 ease, transform 0.3 ease;
+}
+
+.home .btn-box a:hover {
+    background: #A32829;
+    transform: scale(1.05); 
 }
 
 .home .intro-image {
@@ -270,6 +288,12 @@ color pallete theme :
     text-align: center;
     justify-content: center;
     align-items: center;
+    transition: background 0.3 ease, transform 0.3 ease;
+}
+
+.services .btn-services a:hover{
+    background: #A32829;
+    transform: scale(1.05); 
 }
 
 .promo {
@@ -360,25 +384,19 @@ color pallete theme :
     text-align: center;
     justify-content: center;
     align-items: center;
+    transform: background 0.3 ease, transform 0.3 ease;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after{
-    content: '';
-}
-
-.swiper-button-prev, .swiper-button-next {
-    width: initial;
-    height: initial;
-    font-size: 1000px;
-    color: #B23A39;
-    display: none;
+.promo .card-button a:hover {
+    background: #3a3a3a;
+    transform: scale(1.05);
 }
 
 .testimoni {
     height: 70vh;
     width: 100%;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .testimoni .testimoni-title {
