@@ -536,9 +536,6 @@ color pallete theme :
 
 /*Laptop*/
 @media (max-width: 1366px) {
-    html {
-        font-size: 50%;
-    }
 
     .header {
         padding: 10px 5%;
@@ -622,6 +619,56 @@ color pallete theme :
 
     .about .about-image img {
         width: 510px;
+    }
+
+    .services {
+        height: 768px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .services .services-title {
+        height: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .services .services-title h1 {
+        font-size: 38px;
+    }
+
+    .services .card-container {
+        height: 100%;
+    }
+    
+    .services .card {
+        width: 350px;
+        height: 300px;
+    }
+    
+    .services .card img {
+        display: block;
+        width: 15%;
+        height: auto;
+    }
+    
+    .services .card h2 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .services .card p {
+        margin-top: 20px;
+        font-size: 15px;
+        padding-inline: 20px;
+    }
+    
+    .services .btn-services {
+        width: 255px;
+        height: 45px;
+    }
+    
+    .services .btn-services a {
+        font-size: 13px;
     }
 }
 
