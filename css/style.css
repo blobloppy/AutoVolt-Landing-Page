@@ -94,7 +94,7 @@ color pallete theme :
 
 .home .intro-content {
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
     padding: 10%;
 }
 
@@ -537,7 +537,36 @@ color pallete theme :
 /*Laptop*/
 @media (max-width: 1366px) {
     html {
-        font-size: 75%;
+        font-size: 50%;
+    }
+
+    .home {
+        height: 768px;
+    }
+
+    .home .intro-content h1{
+        font-size: 33px;
+        word-spacing: 6px;
+        line-height: 60px;
+    }
+
+    .home .intro-content p{
+        font-size: 16px;
+        word-spacing: 8px;
+        line-height: 25px;
+    }
+
+    .home .intro-content {
+        max-width: 50%;
+    }
+
+    .home .intro-image {
+        max-width: 50%;
+    }
+
+    .home .intro-image img {
+        width: 543px;
+        height: 600px;
     }
 }
 
