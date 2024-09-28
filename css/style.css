@@ -78,11 +78,23 @@ color pallete theme :
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
+    z-index: 1;
 }
+
+.home::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(226,226,226,1) 35%);
+    bottom: 0;
+    z-index: 2;
+}
+
 
 .home .intro-content {
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
     padding: 10%;
 }
 
@@ -130,6 +142,12 @@ color pallete theme :
     text-align: center;
     justify-content: center;
     align-items: center;
+    transition: background 0.3 ease, transform 0.3 ease;
+}
+
+.home .btn-box a:hover {
+    background: #A32829;
+    transform: scale(1.05); 
 }
 
 .home .intro-image {
@@ -284,6 +302,12 @@ color pallete theme :
     text-align: center;
     justify-content: center;
     align-items: center;
+    transition: background 0.3 ease, transform 0.3 ease;
+}
+
+.services .btn-services a:hover{
+    background: #A32829;
+    transform: scale(1.05); 
 }
 
 .promo {
@@ -312,31 +336,35 @@ color pallete theme :
 }
 
 .promo .card-container {
-    padding-block: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
     height: 700px;
 }   
 
 .promo .card-content {
     justify-content: center;
     align-items: center;
+    width: 1000px;
+    height: 700px;
     border-radius: 1.76rem;
     margin-inline: 1.25rem;
     overflow: hidden;
 }
 
 .promo .card-article {
-    width: 300px;
-    border-radius: 1.25rem;
+    width: 100%;
     overflow: hidden;
     
 }
 
 .promo .card-image {
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
 .promo .card-data {
-    border-radius: 1rem;
     position: relative;
     text-align: center;
     z-index: 10;
@@ -345,7 +373,7 @@ color pallete theme :
 .promo .card-image img {
     justify-content: center;
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin: 0 auto;
     position: relative;
     z-index: 5;
@@ -374,25 +402,19 @@ color pallete theme :
     text-align: center;
     justify-content: center;
     align-items: center;
+    transform: background 0.3 ease, transform 0.3 ease;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after{
-    content: '';
-}
-
-.swiper-button-prev, .swiper-button-next {
-    width: initial;
-    height: initial;
-    font-size: 1000px;
-    color: #B23A39;
-    display: none;
+.promo .card-button a:hover {
+    background: #3a3a3a;
+    transform: scale(1.05);
 }
 
 .testimoni {
     height: 70vh;
     width: 100%;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .testimoni .testimoni-title {
@@ -522,4 +544,158 @@ color pallete theme :
     margin: 15px 0 10px 0;
     font-size: 1rem;
     font-weight: 300;
+}
+
+/*Media Queries*/
+
+/*Laptop*/
+@media (max-width: 1366px) {
+
+    .header {
+        padding: 10px 5%;
+    }
+
+    .navbar a {
+        font-size: 19px;
+    }
+
+    .home {
+        height: 768px;
+    }
+
+    .home .intro-content h1{
+        font-size: 33px;
+        word-spacing: 6px;
+        line-height: 60px;
+    }
+
+    .home .intro-content p{
+        font-size: 16px;
+        word-spacing: 8px;
+        line-height: 25px;
+    }
+
+    .home .intro-content {
+        max-width: 50%;
+    }
+
+    .home .intro-image {
+        max-width: 50%;
+    }
+
+    .home .intro-image img {
+        width: 550px;
+    }
+
+    .home .intro-content .btn-box {
+        margin-top: 10px;
+        width: 245px;
+        height: 40px;
+    }
+
+    .home .btn-box a {
+        font-size: 13px;
+        
+    }
+
+    .home::after {
+        height: 50px;
+    }
+
+    .about {
+        height: 538px;
+        padding-top: 20px;
+    }
+
+    .about .about-content {
+        padding-left: 5%;
+        padding-top: 7%;
+        max-width: 55%;
+    }
+    
+    .about .about-content h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .about .about-content p{
+        padding-top: 35px;
+        font-weight: 300;
+        font-size: 30px;
+    }
+    
+    .about .about-image {
+        max-width: 45%;
+        padding-left: 10px;
+        padding-top: 5%;
+        margin-left: 50px;
+    }
+
+    .about .about-image img {
+        width: 510px;
+    }
+
+    .services {
+        height: 768px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .services .services-title {
+        height: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .services .services-title h1 {
+        font-size: 38px;
+    }
+
+    .services .card-container {
+        height: 100%;
+    }
+    
+    .services .card {
+        width: 350px;
+        height: 300px;
+    }
+    
+    .services .card img {
+        display: block;
+        width: 15%;
+        height: auto;
+    }
+    
+    .services .card h2 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .services .card p {
+        margin-top: 20px;
+        font-size: 15px;
+        padding-inline: 20px;
+    }
+    
+    .services .btn-services {
+        width: 255px;
+        height: 45px;
+    }
+    
+    .services .btn-services a {
+        font-size: 13px;
+    }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+/*Mobile Phone*/
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
 }
