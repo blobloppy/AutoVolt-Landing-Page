@@ -19,6 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let navEl = document.querySelector('.header');
     
     window.addEventListener('scroll', () => {
+      if (window.scrollY >= 56) {
+        navEl.classList.add('scrolled');
+      } else {
+        navEl.classList.remove('scrolled');
+      }
       /* Ferry's work */
       const scrollposition = window.scrollY;
       const blurElement = document.getElementById('transition-blur');
