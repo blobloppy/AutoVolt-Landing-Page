@@ -887,20 +887,7 @@ color pallete theme :
     }
 }
 
-@media (max-width: 1083px) {
-    .navbar {
-        width: 100%;
-        display: none;
-        flex-direction: column;
-    }
-
-    .hamburger {
-        display: block;
-    }
-}
-
 @media (max-width: 974px) {
-    
     .home {
         width: 130%;
     }
@@ -927,8 +914,6 @@ color pallete theme :
 }
 
 @media (max-width: 899px) {
-    
-
     .home {
         width: 140%;
     }
@@ -955,12 +940,6 @@ color pallete theme :
 }
 
 @media (max-width: 835px){
-    
-
-    .hamburger {
-        display: block;
-    }
-
     .home {
         width: 150%;
     }
@@ -987,11 +966,6 @@ color pallete theme :
 }
 
 @media (max-width: 779px){
-    
-
-    .hamburger {
-        display: block;
-    }
 
     .home {
         width: 200%;
@@ -1019,10 +993,6 @@ color pallete theme :
 }
 
 @media (max-width: 584px){
-    
-
-    
-
     .home {
         width: 270%;
     }
