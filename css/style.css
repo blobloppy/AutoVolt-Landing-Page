@@ -36,6 +36,24 @@ color pallete theme :
     width: 50%;
 }
 
+.hamburger {
+    top: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 32px;
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.show {
+    display: flex;
+}
+
 .navbar a {
     position: relative;
     color: #000;
@@ -549,7 +567,60 @@ color pallete theme :
 
 /*Media Queries*/
 
-/*Laptop*/
+@media (max-width: 1627px) {
+    .home {
+        height: 100%;
+    }
+
+    .home .intro-content {
+        max-width: 50%;
+    }
+
+
+    .home .intro-image {
+        padding-right: 100px;
+        left: 0;
+        max-width: 50%;
+    }
+
+    .home .intro-image img {
+        width: 700px;
+    }
+}
+
+@media (max-width: 1556px) {
+    .home {
+        height: 100%;
+    }
+
+    .home .intro-content {
+        max-width: 50%;
+    }
+
+
+    .home .intro-image {
+        padding-right: 100px;
+        left: 0;
+        max-width: 50%;
+    }
+
+    .home .intro-image img {
+        width: 700px;
+    }
+
+    .services {
+        height: 100%;
+    }
+
+    .promo {
+        height: 100%;
+    }
+
+    .testimoni {
+        height: 100%;
+    }
+}
+
 @media (max-width: 1366px) {
     .header {
         padding: 10px 5%;
@@ -765,14 +836,251 @@ color pallete theme :
     }
 }
 
-/*Tablet*/
-@media (max-width: 768px) {
-    
+@media (max-width: 1296px) {
+    .navbar {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
 }
 
-/*Mobile Phone*/
-@media (max-width: 450px) {
-    html {
-        font-size: 55%;
+@media (max-width: 1167px){
+    .navbar {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header {
+        width: 120%;
+    }
+
+    .home {
+        width: 120%;
+    }
+
+    .about {
+        width: 120%;
+    }
+
+    .services {
+        width: 120%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .promo {
+        width: 120%;
+    }
+
+    .testimoni {
+        width: 120%;
+    }
+
+    .footer {
+        width: 120%;
     }
 }
+
+@media (max-width: 1083px) {
+    .navbar {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 974px) {
+    .navbar {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .home {
+        width: 130%;
+    }
+
+    .about {
+        width: 130%;
+    }
+
+    .services {
+        width: 130%;
+    }
+
+    .promo {
+        width: 130%;
+    }
+
+    .testimoni {
+        width: 130%;
+    }
+
+    .footer {
+        width: 130%;
+    }
+}
+
+@media (max-width: 899px) {
+    .navbar {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .home {
+        width: 140%;
+    }
+
+    .about {
+        width: 140%;
+    }
+
+    .services {
+        width: 140%;
+    }
+
+    .promo {
+        width: 140%;
+    }
+
+    .testimoni {
+        width: 140%;
+    }
+
+    .footer {
+        width: 140%;
+    }
+}
+
+@media (max-width: 835px){
+    .navbar {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .home {
+        width: 150%;
+    }
+
+    .about {
+        width: 150%;
+    }
+
+    .services {
+        width: 150%;
+    }
+
+    .promo {
+        width: 150%;
+    }
+
+    .testimoni {
+        width: 150%;
+    }
+
+    .footer {
+        width: 150%;
+    }
+}
+
+@media (max-width: 779px){
+    .navbar {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .home {
+        width: 200%;
+    }
+
+    .about {
+        width: 200%;
+    }
+
+    .services {
+        width: 200%;
+    }
+
+    .promo {
+        width: 200%;
+    }
+
+    .testimoni {
+        width: 200%;
+    }
+
+    .footer {
+        width: 200%;
+    }
+}
+
+@media (max-width: 584px){
+    .navbar {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .home {
+        width: 270%;
+    }
+
+    .about {
+        width: 270%;
+    }
+
+    .services {
+        width: 270%;
+    }
+
+    .promo {
+        width: 270%;
+    }
+
+    .testimoni {
+        width: 270%;
+    }
+
+    .footer {
+        width: 270%;
+    }
+}
+
+
