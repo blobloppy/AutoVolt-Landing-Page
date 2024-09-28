@@ -540,6 +540,14 @@ color pallete theme :
         font-size: 50%;
     }
 
+    .header {
+        padding: 10px 5%;
+    }
+
+    .navbar a {
+        font-size: 19px;
+    }
+
     .home {
         height: 768px;
     }
@@ -565,8 +573,18 @@ color pallete theme :
     }
 
     .home .intro-image img {
-        width: 543px;
-        height: 600px;
+        width: 550px;
+    }
+
+    .home .intro-content .btn-box {
+        margin-top: 10px;
+        width: 245px;
+        height: 40px;
+    }
+
+    .home .btn-box a {
+        font-size: 13px;
+        
     }
 }
 
