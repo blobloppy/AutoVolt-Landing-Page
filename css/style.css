@@ -322,31 +322,35 @@ color pallete theme :
 }
 
 .promo .card-container {
-    padding-block: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
     height: 700px;
 }   
 
 .promo .card-content {
     justify-content: center;
     align-items: center;
+    width: 1000px;
+    height: 700px;
     border-radius: 1.76rem;
     margin-inline: 1.25rem;
     overflow: hidden;
 }
 
 .promo .card-article {
-    width: 300px;
-    border-radius: 1.25rem;
+    width: 100%;
     overflow: hidden;
     
 }
 
 .promo .card-image {
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
 .promo .card-data {
-    border-radius: 1rem;
     position: relative;
     text-align: center;
     z-index: 10;
@@ -355,7 +359,7 @@ color pallete theme :
 .promo .card-image img {
     justify-content: center;
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin: 0 auto;
     position: relative;
     z-index: 5;
