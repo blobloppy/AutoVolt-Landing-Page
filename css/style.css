@@ -725,7 +725,76 @@ color pallete theme :
         font-size: 12px;
     }
 
+    .testimoni {
+        height: 538px;
+        width: 100%;
+        display: block;
+        margin-bottom: 100px;
+    }
     
+    .testimoni .testimoni-title {
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .testimoni .testimoni-title h1{
+        font-size: 70px;
+        font-weight: 700;
+        color: black;
+        letter-spacing: 8px;
+    }
+    
+    .testimoni .card-container {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .testimoni .card {
+        width: 480px;
+        height: 500px;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .testimoni .card-content {
+        padding: 30px;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .testimoni .card-content img {
+        padding-block: 5px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .testimoni .card-content h3 {
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .testimoni .card-content p {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        padding-inline: 50px;
+    }
 }
 
 /*Tablet*/
