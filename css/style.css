@@ -605,7 +605,7 @@ color pallete theme :
     }
     
     .about .about-content p{
-        padding-top: 35px;
+        padding-top: 30px;
         font-weight: 300;
         font-size: 30px;
     }
@@ -670,6 +670,48 @@ color pallete theme :
     .services .btn-services a {
         font-size: 13px;
     }
+
+    .promo {
+        height: 614px;
+    }
+    
+    .promo .promo-title {
+        margin-top: 40px;
+        height: 60px;
+    }
+    
+    .promo .promo-title h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .promo .card-container {
+        width: 700px;
+        height: 500px;
+    }   
+    
+    .promo .card-content {
+        width: 700px;
+        height: 500px;
+    }
+    
+    .promo .card-image img {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .promo .card-button {
+        margin-top: 20px;
+        height: 50px;
+    }
+    
+    .promo .card-button a {
+        width: 200px;
+        border-radius: 7px;
+        font-size: 12px;
+    }
+
+    
 }
 
 /*Tablet*/
