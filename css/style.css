@@ -424,6 +424,17 @@ color pallete theme :
     transform: scale(1.05);
 }
 
+/* CSS of FAQ Section */
+.FAQ .FAQ-title h1{
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-weight: 650;
+    letter-spacing: 5px;
+}
+
 .testimoni {
     height: 70vh;
     width: 100%;
