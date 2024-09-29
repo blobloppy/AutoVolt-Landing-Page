@@ -17,7 +17,7 @@ color pallete theme :
 .header {
     position: fixed;
     left: 0;
-    width: 100%;
+    width: 100%; 
     padding: 10px 5%;
     background-color: transparent;
     display: flex;
@@ -34,7 +34,6 @@ color pallete theme :
 
 .logo {
     width: 50%;
-    /* margin-right: 50px; */
 }
 
 .hamburger {
