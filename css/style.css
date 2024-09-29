@@ -85,6 +85,7 @@ color pallete theme :
 }
 
 .home {
+    /* rgb line gradientnya boleh gw ubah ? */
     background-image:url("../asset/line.svg"), linear-gradient(0deg, rgba(226,226,226) 3%, rgb(226, 226, 226) 35%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,7 +208,15 @@ color pallete theme :
     font-weight: 600;
     font-size: 50px;
     line-height: 60px;
-    text-decoration: underline;
+    text-decoration: underline; /* underline boleh ga dipake ? */
+    /* Adding a text box of the "why us" pharase (Ferry's work) */
+    border: 2px solid black; 
+    padding: 20px;
+    background-color: #000;
+    width: 300px;
+    margin: 50px auto;
+    color: #fff;
+    border-radius: 10px;
 }
 
 .about .about-content p{
