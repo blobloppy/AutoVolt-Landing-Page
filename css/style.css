@@ -17,7 +17,7 @@ color pallete theme :
 .header {
     position: fixed;
     left: 0;
-    width: 100%; 
+    width: 100%;
     padding: 10px 5%;
     background-color: transparent;
     display: flex;
@@ -34,24 +34,6 @@ color pallete theme :
 
 .logo {
     width: 50%;
-}
-
-.hamburger {
-    top: 0;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    font-size: 32px;
-    display: none;
-}
-
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.show {
-    display: flex;
 }
 
 .navbar a {
@@ -85,7 +67,7 @@ color pallete theme :
 }
 
 .home {
-    background-image:url("../asset/line.svg"), linear-gradient(0deg, rgb(255, 255, 255) 3%, rgb(255, 255, 255) 35%);
+    background-image:url("../asset/line.svg"), linear-gradient(0deg, rgba(226,226,226) 3%, rgb(226, 226, 226) 35%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -96,7 +78,19 @@ color pallete theme :
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
+    z-index: 1;
 }
+
+.home::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(226,226,226,1) 35%);
+    bottom: 0;
+    z-index: 2;
+}
+
 
 .home .intro-content {
     flex: 1;
@@ -173,6 +167,7 @@ color pallete theme :
     padding-top: 50px;
 }
 
+ /* Ferry's work */
 .about .about-content { 
     padding-left: 10%;
     padding-top: 7%;
@@ -186,7 +181,7 @@ color pallete theme :
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100px;
     background-color: white;
     opacity: 0;
     z-index: 2;
@@ -198,15 +193,7 @@ color pallete theme :
     font-weight: 600;
     font-size: 50px;
     line-height: 60px;
-    text-decoration: underline; /* underline boleh ga dipake ? */
-    /* Adding a text box of the "why us" pharase (Ferry's work) */
-    border: 2px solid black; 
-    padding: 20px;
-    background-color: #000;
-    width: 300px;
-    margin: 50px auto;
-    color: #fff;
-    border-radius: 10px;
+    text-decoration: underline;
 }
 
 .about .about-content p{
@@ -424,56 +411,6 @@ color pallete theme :
     transform: scale(1.05);
 }
 
-.FAQ {
-    border: 1px solid rgba(0, 0, 0, 0);
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* CSS of FAQ Section */
-.FAQ .FAQ-title h1{
-    align-items: center;
-    margin: 1.5rem 0;
-    display: flex;
-    flex-direction: column;
-    font-size: 50px;
-    font-weight: 650;
-    letter-spacing: 5px;
-}
-
-.card-container {
-    max-width: 62%;
-    margin: auto;
-}
-
-.card-content {
-    background-color: white;
-    cursor: pointer;
-    font-size: 1.2rem;
-    width: 120%;
-    padding: 2rem 2.5rem;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-}
-
-.answer {
-    padding: 0 2rem 2.5rem 2.5rem;
-    background-color: white;
-    overflow: hidden;
-
-}
-
-.card {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 10px;
-}
-
 .testimoni {
     height: 70vh;
     width: 100%;
@@ -612,60 +549,7 @@ color pallete theme :
 
 /*Media Queries*/
 
-@media (max-width: 1627px) {
-    .home {
-        height: 100%;
-    }
-
-    .home .intro-content {
-        max-width: 50%;
-    }
-
-
-    .home .intro-image {
-        padding-right: 100px;
-        left: 0;
-        max-width: 50%;
-    }
-
-    .home .intro-image img {
-        width: 700px;
-    }
-}
-
-@media (max-width: 1556px) {
-    .home {
-        height: 100%;
-    }
-
-    .home .intro-content {
-        max-width: 50%;
-    }
-
-
-    .home .intro-image {
-        padding-right: 100px;
-        left: 0;
-        max-width: 50%;
-    }
-
-    .home .intro-image img {
-        width: 700px;
-    }
-
-    .services {
-        height: 100%;
-    }
-
-    .promo {
-        height: 100%;
-    }
-
-    .testimoni {
-        height: 100%;
-    }
-}
-
+/*Laptop*/
 @media (max-width: 1366px) {
     .header {
         padding: 10px 5%;
@@ -881,190 +765,14 @@ color pallete theme :
     }
 }
 
-@media (max-width: 1296px) {
-    .navbar {
-        width: 100%;
-        display: none;
-        flex-direction: column;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
+/*Tablet*/
+@media (max-width: 768px) {
+    
 }
 
-@media (max-width: 1167px){
-    .navbar {
-        width: 100%;
-        display: none;
-        flex-direction: column;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .header {
-        width: 120%;
-    }
-
-    .home {
-        width: 120%;
-    }
-
-    .about {
-        width: 120%;
-    }
-
-    .services {
-        width: 120%;
-        padding-top: 10px;
-        padding-bottom: 20px;
-    }
-
-    .promo {
-        width: 120%;
-    }
-
-    .testimoni {
-        width: 120%;
-    }
-
-    .footer {
-        width: 120%;
+/*Mobile Phone*/
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
     }
 }
-
-@media (max-width: 974px) {
-    .home {
-        width: 130%;
-    }
-
-    .about {
-        width: 130%;
-    }
-
-    .services {
-        width: 130%;
-    }
-
-    .promo {
-        width: 130%;
-    }
-
-    .testimoni {
-        width: 130%;
-    }
-
-    .footer {
-        width: 130%;
-    }
-}
-
-@media (max-width: 899px) {
-    .home {
-        width: 140%;
-    }
-
-    .about {
-        width: 140%;
-    }
-
-    .services {
-        width: 140%;
-    }
-
-    .promo {
-        width: 140%;
-    }
-
-    .testimoni {
-        width: 140%;
-    }
-
-    .footer {
-        width: 140%;
-    }
-}
-
-@media (max-width: 835px){
-    .home {
-        width: 150%;
-    }
-
-    .about {
-        width: 150%;
-    }
-
-    .services {
-        width: 150%;
-    }
-
-    .promo {
-        width: 150%;
-    }
-
-    .testimoni {
-        width: 150%;
-    }
-
-    .footer {
-        width: 150%;
-    }
-}
-
-@media (max-width: 779px){
-
-    .home {
-        width: 200%;
-    }
-
-    .about {
-        width: 200%;
-    }
-
-    .services {
-        width: 200%;
-    }
-
-    .promo {
-        width: 200%;
-    }
-
-    .testimoni {
-        width: 200%;
-    }
-
-    .footer {
-        width: 200%;
-    }
-}
-
-@media (max-width: 584px){
-    .home {
-        width: 270%;
-    }
-
-    .about {
-        width: 270%;
-    }
-
-    .services {
-        width: 270%;
-    }
-
-    .promo {
-        width: 270%;
-    }
-
-    .testimoni {
-        width: 270%;
-    }
-
-    .footer {
-        width: 270%;
-    }
-}
-
-
